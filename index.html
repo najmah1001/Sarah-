@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>رسالة خاصة لمريم ♡</title>
+<meta name="description" content="رسالة اعتذار خاصة مليانة حب — افتح الظرف وشوف شنو مكتوب لك ❤️" />
+<meta property="og:title" content="رسالة خاصة لمريم ♡" />
+<meta property="og:description" content="رسالة اعتذار خاصة مليانة حب — افتح الظرف وشوف شنو مكتوب لك ❤️" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <audio id="song" src="song.mp3" loop preload="auto"></audio>
+  <button id="songBtn" class="song-btn" aria-label="تشغيل الأغنية">♪ ▶</button>
+
+  <main class="hearts-bg">
+    <div class="wrap">
+
+      <!-- المرحلة 1: الظرف -->
+      <button id="envelopeBtn" class="stage envelope-btn" aria-label="افتح الرسالة">
+        <img src="assets/envelope.png" alt="ظرف رسالة حب" class="envelope float" />
+        <p class="title">♡ رسالة خاصة لـ<span class="name"></span> ♡</p>
+        <span class="pill">اضغط على الظرف</span>
+      </button>
+
+      <!-- المرحلة 2: السؤال -->
+      <div id="askStage" class="stage card hidden">
+        <h1 class="h1">شلونج أميرتي <span class="name"></span>؟<br />تقبلين اعتذاري لو لا؟</h1>
+        <img src="assets/cat-heart.png" alt="قطة تحضن قلب" class="cat float" />
+        <div class="btn-row">
+          <button id="yesBtn" class="btn btn-primary">أكيد أقبل ♡</button>
+          <button id="noBtn" class="btn btn-ghost">لا</button>
+        </div>
+        <p id="teaseMsg" class="tease hidden">ما ينفع تضغطين "لا" 😌</p>
+      </div>
+
+      <!-- المرحلة 3: القبول -->
+      <div id="yesStage" class="stage card hidden">
+        <img src="assets/cat-heart.png" alt="قطة فرحانة تحضن قلب" class="cat big float" />
+        <h1 class="h1 big">كنت متأكد ❤️</h1>
+        <p class="msg">
+          شلون تزعلين مني <span class="name"></span>ة؟ إذا أميرتي زعلت منو أكو غيري يراضيها؟!
+          وهذا أحلى موقع لملكتي، أحبج هواية ❤️.❤️.❤️
+        </p>
+        <button id="restartBtn" class="btn btn-small">من البداية</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
